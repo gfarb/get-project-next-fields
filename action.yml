@@ -1,0 +1,21 @@
+name: 'Get Project Next Fields'
+description: 'Uses the GraphQL API and pagination to retrieve all Project Next Field data for a Project (owned by a User or Organization).'
+inputs:
+  PAT:
+    description: 'Token for GitHub API access'
+    required: true
+  PROJECT_NEXT_NUMBER:
+    description: 'Number of the Project'
+    required: true
+  ORG:
+    description: 'Name of the Organization that owns the Project. This input or the USER input must be supplied.'
+    required: false
+  USER:
+    description: 'Name of the User that owns the Project. This input or the ORG input must be supplied.'
+    required: false
+outputs:
+  PROJECT_NEXT_FIELDS:
+    description: Map of all Project Next Fields and Field Settings for a Project
+runs:
+  using: 'node16'
+  main: 'index.js'
