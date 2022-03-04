@@ -13,13 +13,13 @@ This GitHub Action uses the GitHub GraphQL API and pagination to retrieve all Pr
 - Workflow: 
 	```
 	steps:
-		- name: Get Project Next-Fields
-			id: project-next-fields
-			uses: ./.github/actions/get-project-next-fields
-			with:
-				PAT: ${{ secrets.PAT }}
-				USER: gfarb
-				PROJECT_NEXT_NUMBER: 1
+	   - name: Get Project Next-Fields
+	      id: project-next-fields
+		  uses: ./.github/actions/get-project-next-fields
+		  with:
+		     PAT: ${{ secrets.PAT }}
+			 USER: gfarb
+			 PROJECT_NEXT_NUMBER: 1
 	```
 ##### Example #2 - Organization-Owned Project:
 - Assumptions:
@@ -63,8 +63,6 @@ This GitHub Action uses the GitHub GraphQL API and pagination to retrieve all Pr
 - [About projects (beta)](https://docs.github.com/en/issues/trying-out-the-new-projects-experience/about-projects)
 - [Using the API to manage projects (beta)](https://docs.github.com/en/issues/trying-out-the-new-projects-experience/using-the-api-to-manage-projects)
 - [GitHub GraphQL Explorer](https://docs.github.com/en/graphql/overview/explorer)
-## Authors
-- [Max Goldfarb](https://www.linkedin.com/in/mhgoldfarb/)
 ## Version History
 * 0.1
   * Initial Release
