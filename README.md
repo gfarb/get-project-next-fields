@@ -15,7 +15,7 @@ This GitHub Action uses the GitHub GraphQL API and pagination to retrieve all Pr
 	steps:
 	   - name: Get Project Next-Fields
 	      id: project-next-fields
-	      uses: ./.github/actions/get-project-next-fields
+	      uses: gfarb/get-project-next-fields@0.1
 	      with:
 	        PAT: ${{ secrets.PAT }}
 		 USER: gfarb
@@ -30,7 +30,7 @@ This GitHub Action uses the GitHub GraphQL API and pagination to retrieve all Pr
 	steps:
 	   - name: Get Project Next-Fields
 	      id: project-next-fields
-	      uses: ./.github/actions/get-project-next-fields
+	      uses: gfarb/get-project-next-fields@0.1
 	      with:
 	        PAT: ${{ secrets.PAT }}
 		 ORG: github
