@@ -15,11 +15,11 @@ This GitHub Action uses the GitHub GraphQL API and pagination to retrieve all Pr
 	steps:
 	   - name: Get Project Next-Fields
 	      id: project-next-fields
-		  uses: ./.github/actions/get-project-next-fields
-		  with:
-		     PAT: ${{ secrets.PAT }}
-			 USER: gfarb
-			 PROJECT_NEXT_NUMBER: 1
+	      uses: ./.github/actions/get-project-next-fields
+	      with:
+	        PAT: ${{ secrets.PAT }}
+		 USER: gfarb
+		 PROJECT_NEXT_NUMBER: 1
 	```
 ##### Example #2 - Organization-Owned Project:
 - Assumptions:
@@ -28,13 +28,13 @@ This GitHub Action uses the GitHub GraphQL API and pagination to retrieve all Pr
 - Workflow: 
 	```
 	steps:
-		- name: Get Project Next-Fields
-			id: project-next-fields
-			uses: ./.github/actions/get-project-next-fields
-			with:
-				PAT: ${{ secrets.PAT }}
-				ORG: github
-				PROJECT_NEXT_NUMBER: 1234
+	   - name: Get Project Next-Fields
+	      id: project-next-fields
+	      uses: ./.github/actions/get-project-next-fields
+	      with:
+	        PAT: ${{ secrets.PAT }}
+		 ORG: github
+		 PROJECT_NEXT_NUMBER: 1234
 	```
 ### Parsing output
 ##### Example #1:
