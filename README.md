@@ -51,7 +51,7 @@ This GitHub Action uses the GitHub GraphQL API and pagination to retrieve all Pr
    ```
 - JavaScript:
    ```
-   const selectFieldValueId = JSON.parse(core.getInput('PROJECT_FIELDS'))
+   const selectFieldValueId = JSON.parse(core.getInput('PROJECT_NEXT_FIELDS'))
       .SingleSelectFieldName
       .settings
       .options
