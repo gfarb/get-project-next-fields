@@ -1,4 +1,4 @@
-# Get Project Next Fields Action
+# [Get Project Next Fields Action](https://github.com/marketplace/actions/get-project-next-fields)
 GitHub Action to retrieve [Project Next Field data](https://docs.github.com/en/graphql/reference/objects#projectnextfield) for a [Project (beta)](https://docs.github.com/en/issues/trying-out-the-new-projects-experience) owned by a User or Organization.
 ## Description
 The `Get Project Next Fields` GitHub Action was created to ease the pain of maintaining a file of constants or hardcoding values pertaining to Project Next Fields for use within a GitHub CI/CD flow.
